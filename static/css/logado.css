@@ -1,0 +1,27 @@
+body{
+    background-color: blueviolet;
+}
+
+.titulo{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btn-sair{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btn-editar{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btn-apagar{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}

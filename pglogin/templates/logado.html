@@ -1,0 +1,28 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/logado.css'%}">
+</head>
+<body>
+  <br>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a href="{% url 'configuracao'%}"><button type="button" class="btn btn-dark">configuraçoes</button></a>
+        </li>
+      </ul>
+      <br>
+      <div class="nome" style="text-align:center;color:white">
+        <br>
+        <h1>Bem Vindo {{user.username}}</h1>
+        <h3>Esse é um projeto simples em Django, aonde temos a area de login com a opçao de cadastrar um usuario,<p>
+        depois de logado temos a opção de configurações aonde podemos trocar a senha, apagar a conta e sair<br>
+        nesse projeto nao sao permitidos cadastrar alguem em que o nome ou o email ja esteja sendo usado por outro usuario.<p></h3>
+      </div>
+</body>
+</html>

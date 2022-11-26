@@ -1,0 +1,26 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/confi.css'%}">
+</head>
+<body>
+    <br>
+    <div class="btn-editar">
+        <a href="{% url 'editarsenha' user.id %}"><button type="button" class="btn btn-dark">editar senha</button></a>
+    </div>
+    <br>
+    <div class="btn-apagar">
+        <a href="{% url 'deletar' user.id %}"><button type="button" class="btn btn-dark">apagar conta</button></a>
+    </div>
+    <br>
+    <div class="btn-sair">
+        <a href="{% url 'logout'%}"><button type="button" class="btn btn-dark">sair</button></a>
+    </div>
+</body>
+</html>
